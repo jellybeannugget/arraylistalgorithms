@@ -23,5 +23,9 @@ public class Practice{
         System.out.println(list);
     
 
+        for (int in = 0; in < list.size(); in++){
+        System.out.println(list.get(in));
+        }
+        
 }
 }
