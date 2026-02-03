@@ -24,8 +24,28 @@ public class Practice{
     
 
         for (int in = 0; in < list.size(); in++){
+           if(list.get(in).substring(0,1).equals("L")){
+              list.set(in, "JIG");
+           }
         System.out.println(list.get(in));
         }
-        
+
+        int j = 0;
+        while (j<list.size()){
+         
+           if(list.get(j).indexOf("Michael") >= 0){
+              list.remove(j);
+           }
+           else{
+              j++;
+           }
+           System.out.println(list.get(j));
+         
+         
 }
+
+for (String lis : list) {
+ //  System.out.println(list.get(lis));
+
 }
+}}
