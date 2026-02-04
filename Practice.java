@@ -23,7 +23,7 @@ public class Practice{
         System.out.println(list);
     
 
-        for (int in = 0; in < list.size(); in++){
+     /*   for (int in = 0; in < list.size(); in++){
            if(list.get(in).substring(0,1).equals("L")){
               list.set(in, "JIG");
            }
@@ -48,4 +48,11 @@ for (String lis : list) {
  //  System.out.println(list.get(lis));
 
 }
-}}
+}}*/
+for (int in = list.size(); in >=0 ; in--){
+   if(list.get(in).substring(0,1).equals("L")){
+      list.remove(in);
+   }
+System.out.println(list.get(in));
+}
+   }}
