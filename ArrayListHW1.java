@@ -8,10 +8,14 @@ import java.util.ArrayList;
             double avg = getAverage(nums); 
             int max = getMax(nums); 
             int min = getMin(nums);
+            boolean isDupes = findDuplicates(nums);
              System.out.println("Sum of ArrayList: " + sum); 
              System.out.println("Average of ArrayList: " + avg);
               System.out.println("Maximum value: " + max);
                System.out.println("Minimum value: " + min); 
+                System.out.println("Are there duplicates? : " + isDupes); 
+                accessPairs(nums);
+
             } 
             public static int getSum(ArrayList<Integer> list) {
                  int total = 0; 
@@ -41,4 +45,24 @@ import java.util.ArrayList;
                              }
                               return min; 
                             }
+
+                            public static boolean findDuplicates(ArrayList<Integer> a){
+                              for (int i = 0; i < a.size(); i++){
+                                 for (int j = i+1; j < a.size(); j++){
+                                    if (a.get(i).equals(a.get(j))){
+                                       return true;
+                                    }
+                                 }
+                              }
+                              return false;
+                            }
+
+
+                            public static void accessPairs(ArrayList<Integer> list) {
+                               for (int i = 0; i < list.size() - 1; i++) { 
+                                 int first = list.get(i); 
+                                 int second = list.get(i + 1); 
+                                 System.out.println("pair: " + first + ", " + second);
+                               } 
+                              }
                         }
