@@ -1,4 +1,3 @@
-import java.util.ArrayList;
  public class ArrayListHW1 { 
     public static void main(String[] args) { 
         ArrayList<Integer> nums = new ArrayList<>();
